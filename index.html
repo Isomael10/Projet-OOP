@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/55e34bd143.js" crossorigin="anonymous"></script>
+  <title>Panier</title>
+</head>
+<body>
+
+<h2 class="cart-title">PANIER (<span id="cart-count">0</span>)</h2>
+
+<div class="cart-item" id="item-0">
+  <img src="https://i.pinimg.com/564x/44/db/f3/44dbf3252affe1b050eef4b7ea01c988.jpg" alt="" class="item-image">
+  <div class="item-details">
+    <h3 class="item-title">samsung galaxy s24 ultra</h3>
+    <p class="item-price">700,000 FCFA</p>
+    <button class="delete-button" onclick="deleteItem(0)">Supprimer</button>
+    <button class="like-button" onclick="toggleLike(0)"><i class="fa-regular fa-heart"></i></button>
+  </div>
+  <div class="quantity-control">
+    <button onclick="decreaseQuantity(0)">-</button>
+    <span id="quantity-0">1</span>
+    <button onclick="increaseQuantity(0)">+</button>
+  </div>
+</div>
+
+<div class="cart-item" id="item-1">
+  <img src="https://i.pinimg.com/736x/d1/2c/54/d12c5421692a7fb34b8ac1be6aa0be99.jpg" alt="" class="item-image">
+  <div class="item-details">
+    <h3 class="item-title">Tecno camon 30 pro</h3>
+    <p class="item-price">180,900 FCFA</p>
+    <button class="delete-button" onclick="deleteItem(1)">Supprimer</button>
+    <button class="like-button" onclick="toggleLike(1)"><i class="fa-regular fa-heart"></i></button>
+  </div>
+  <div class="quantity-control">
+    <button onclick="decreaseQuantity(1)">-</button>
+    <span id="quantity-1">1</span>
+    <button onclick="increaseQuantity(1)">+</button>
+  </div>
+</div>
+
+<div class="cart-item" id="item-2">
+  <img src="https://i.pinimg.com/564x/f5/c1/66/f5c16671a90ff6094847c3a765d26147.jpg" alt="" class="item-image">
+  <div class="item-details">
+    <h3 class="item-title">iPhone 14</h3>
+    <p class="item-price">430,790 FCFA</p>
+    <button class="delete-button" onclick="deleteItem(2)">Supprimer</button>
+    <button class="like-button" onclick="toggleLike(2)"><i class="fa-regular fa-heart"></i></button>
+  </div>
+  <div class="quantity-control">
+    <button onclick="decreaseQuantity(2)">-</button>
+    <span id="quantity-2">1</span>
+    <button onclick="increaseQuantity(2)">+</button>
+  </div>
+</div>
+
+<div class="order-actions">
+  <button class="order-button">COMMANDER (<span id="total-price">0 </span> FCFA)</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
